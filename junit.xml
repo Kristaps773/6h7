@@ -1,94 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="" tests="29" assertions="45" errors="7" warnings="0" failures="19" skipped="0" time="29.207626">
-    <testsuite name="Browser Test Suite" tests="29" assertions="45" errors="7" warnings="0" failures="19" skipped="0" time="29.207626">
-      <testsuite name="Tests\Browser\AppFunctionalityTest" file="/projects/challenge/tests/Browser/AppFunctionalityTest.php" tests="13" assertions="9" errors="6" warnings="0" failures="6" skipped="0" time="18.383830">
-        <testcase name="testCanAccessIndex" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/projects/challenge/tests/Browser/AppFunctionalityTest.php" line="59" assertions="1" time="2.248446"/>
-        <testcase name="testLoginEmailValidation" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/projects/challenge/tests/Browser/AppFunctionalityTest.php" line="73" assertions="1" time="1.111895">
-          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Browser\AppFunctionalityTest::testLoginEmailValidation
-Did not see expected text [Please provide a valid e-mail address] within element [body].
-Failed asserting that false is true.
-
-/projects/challenge/vendor/laravel/dusk/src/Concerns/MakesAssertions.php:181
-/projects/challenge/vendor/laravel/dusk/src/Concerns/MakesAssertions.php:152
-/projects/challenge/tests/Browser/AppFunctionalityTest.php:78
-/projects/challenge/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:69
-/projects/challenge/tests/Browser/AppFunctionalityTest.php:81</failure>
-        </testcase>
-        <testcase name="testRegisterEmailValidation" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/projects/challenge/tests/Browser/AppFunctionalityTest.php" line="90" assertions="0" time="0.691663">
-          <error type="Facebook\WebDriver\Exception\NoSuchElementException">Tests\Browser\AppFunctionalityTest::testRegisterEmailValidation
-Facebook\WebDriver\Exception\NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"body [data-test="register-email"]"}
+  <testsuite name="" tests="29" assertions="41" errors="11" warnings="0" failures="16" skipped="0" time="29.398725">
+    <testsuite name="Browser Test Suite" tests="29" assertions="41" errors="11" warnings="0" failures="16" skipped="0" time="29.398725">
+      <testsuite name="Tests\Browser\AppFunctionalityTest" file="/projects/challenge/tests/Browser/AppFunctionalityTest.php" tests="13" assertions="5" errors="10" warnings="0" failures="3" skipped="0" time="18.988829">
+        <testcase name="testCanAccessIndex" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/projects/challenge/tests/Browser/AppFunctionalityTest.php" line="59" assertions="0" time="1.689176">
+          <error type="Facebook\WebDriver\Exception\UnknownErrorException">Tests\Browser\AppFunctionalityTest::testCanAccessIndex
+Facebook\WebDriver\Exception\UnknownErrorException: unknown error: net::ERR_CONNECTION_REFUSED
   (Session info: headless chrome=92.0.4515.107)
 
-/projects/challenge/vendor/php-webdriver/webdriver/lib/Exception/WebDriverException.php:120
+/projects/challenge/vendor/php-webdriver/webdriver/lib/Exception/WebDriverException.php:146
 /projects/challenge/vendor/php-webdriver/webdriver/lib/Remote/HttpCommandExecutor.php:359
 /projects/challenge/vendor/php-webdriver/webdriver/lib/Remote/RemoteWebDriver.php:605
-/projects/challenge/vendor/php-webdriver/webdriver/lib/Remote/RemoteWebDriver.php:219
-/projects/challenge/vendor/laravel/dusk/src/ElementResolver.php:373
-/projects/challenge/vendor/laravel/dusk/src/ElementResolver.php:351
-/projects/challenge/vendor/laravel/dusk/src/ElementResolver.php:90
-/projects/challenge/vendor/laravel/dusk/src/Concerns/InteractsWithElements.php:146
-/projects/challenge/tests/Browser/AppFunctionalityTest.php:94
+/projects/challenge/vendor/php-webdriver/webdriver/lib/Remote/RemoteExecuteMethod.php:23
+/projects/challenge/vendor/php-webdriver/webdriver/lib/WebDriverNavigation.php:41
+/projects/challenge/vendor/laravel/dusk/src/Browser.php:185
+/projects/challenge/tests/Browser/AppFunctionalityTest.php:62
+/projects/challenge/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:69
+/projects/challenge/tests/Browser/AppFunctionalityTest.php:64</error>
+        </testcase>
+        <testcase name="testLoginEmailValidation" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/projects/challenge/tests/Browser/AppFunctionalityTest.php" line="73" assertions="0" time="0.868029">
+          <error type="Facebook\WebDriver\Exception\UnknownErrorException">Tests\Browser\AppFunctionalityTest::testLoginEmailValidation
+Facebook\WebDriver\Exception\UnknownErrorException: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: headless chrome=92.0.4515.107)
+
+/projects/challenge/vendor/php-webdriver/webdriver/lib/Exception/WebDriverException.php:146
+/projects/challenge/vendor/php-webdriver/webdriver/lib/Remote/HttpCommandExecutor.php:359
+/projects/challenge/vendor/php-webdriver/webdriver/lib/Remote/RemoteWebDriver.php:605
+/projects/challenge/vendor/php-webdriver/webdriver/lib/Remote/RemoteExecuteMethod.php:23
+/projects/challenge/vendor/php-webdriver/webdriver/lib/WebDriverNavigation.php:41
+/projects/challenge/vendor/laravel/dusk/src/Browser.php:185
+/projects/challenge/tests/Browser/AppFunctionalityTest.php:76
+/projects/challenge/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:69
+/projects/challenge/tests/Browser/AppFunctionalityTest.php:81</error>
+        </testcase>
+        <testcase name="testRegisterEmailValidation" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/projects/challenge/tests/Browser/AppFunctionalityTest.php" line="90" assertions="0" time="0.648598">
+          <error type="Facebook\WebDriver\Exception\UnknownErrorException">Tests\Browser\AppFunctionalityTest::testRegisterEmailValidation
+Facebook\WebDriver\Exception\UnknownErrorException: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: headless chrome=92.0.4515.107)
+
+/projects/challenge/vendor/php-webdriver/webdriver/lib/Exception/WebDriverException.php:146
+/projects/challenge/vendor/php-webdriver/webdriver/lib/Remote/HttpCommandExecutor.php:359
+/projects/challenge/vendor/php-webdriver/webdriver/lib/Remote/RemoteWebDriver.php:605
+/projects/challenge/vendor/php-webdriver/webdriver/lib/Remote/RemoteExecuteMethod.php:23
+/projects/challenge/vendor/php-webdriver/webdriver/lib/WebDriverNavigation.php:41
+/projects/challenge/vendor/laravel/dusk/src/Browser.php:185
+/projects/challenge/tests/Browser/AppFunctionalityTest.php:93
 /projects/challenge/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:69
 /projects/challenge/tests/Browser/AppFunctionalityTest.php:98</error>
         </testcase>
-        <testcase name="testRegisterPasswordValidation" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/projects/challenge/tests/Browser/AppFunctionalityTest.php" line="107" assertions="0" time="0.792193">
-          <error type="Facebook\WebDriver\Exception\NoSuchElementException">Tests\Browser\AppFunctionalityTest::testRegisterPasswordValidation
-Facebook\WebDriver\Exception\NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"body [data-test="register-password"]"}
+        <testcase name="testRegisterPasswordValidation" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/projects/challenge/tests/Browser/AppFunctionalityTest.php" line="107" assertions="0" time="0.671318">
+          <error type="Facebook\WebDriver\Exception\UnknownErrorException">Tests\Browser\AppFunctionalityTest::testRegisterPasswordValidation
+Facebook\WebDriver\Exception\UnknownErrorException: unknown error: net::ERR_CONNECTION_REFUSED
   (Session info: headless chrome=92.0.4515.107)
 
-/projects/challenge/vendor/php-webdriver/webdriver/lib/Exception/WebDriverException.php:120
+/projects/challenge/vendor/php-webdriver/webdriver/lib/Exception/WebDriverException.php:146
 /projects/challenge/vendor/php-webdriver/webdriver/lib/Remote/HttpCommandExecutor.php:359
 /projects/challenge/vendor/php-webdriver/webdriver/lib/Remote/RemoteWebDriver.php:605
-/projects/challenge/vendor/php-webdriver/webdriver/lib/Remote/RemoteWebDriver.php:219
-/projects/challenge/vendor/laravel/dusk/src/ElementResolver.php:373
-/projects/challenge/vendor/laravel/dusk/src/ElementResolver.php:351
-/projects/challenge/vendor/laravel/dusk/src/ElementResolver.php:90
-/projects/challenge/vendor/laravel/dusk/src/Concerns/InteractsWithElements.php:146
-/projects/challenge/tests/Browser/AppFunctionalityTest.php:111
+/projects/challenge/vendor/php-webdriver/webdriver/lib/Remote/RemoteExecuteMethod.php:23
+/projects/challenge/vendor/php-webdriver/webdriver/lib/WebDriverNavigation.php:41
+/projects/challenge/vendor/laravel/dusk/src/Browser.php:185
+/projects/challenge/tests/Browser/AppFunctionalityTest.php:110
 /projects/challenge/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:69
 /projects/challenge/tests/Browser/AppFunctionalityTest.php:115</error>
         </testcase>
-        <testcase name="testLoginErrorMessage" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/projects/challenge/tests/Browser/AppFunctionalityTest.php" line="124" assertions="1" time="1.764991">
-          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Browser\AppFunctionalityTest::testLoginErrorMessage
-Actual path [/login] does not equal expected path [/].
-Failed asserting that '/login' matches PCRE pattern "/^\/$/u".
-
-/projects/challenge/vendor/laravel/dusk/src/Concerns/MakesUrlAssertions.php:185
-/projects/challenge/vendor/laravel/dusk/src/Concerns/MakesUrlAssertions.php:218
-/projects/challenge/tests/Browser/AppFunctionalityTest.php:131
-/projects/challenge/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:69
-/projects/challenge/tests/Browser/AppFunctionalityTest.php:133</failure>
-        </testcase>
-        <testcase name="testRegisterSuccessMessage" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/projects/challenge/tests/Browser/AppFunctionalityTest.php" line="142" assertions="0" time="0.713855">
-          <error type="Facebook\WebDriver\Exception\NoSuchElementException">Tests\Browser\AppFunctionalityTest::testRegisterSuccessMessage
-Facebook\WebDriver\Exception\NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"body [data-test="register-firstName"]"}
+        <testcase name="testLoginErrorMessage" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/projects/challenge/tests/Browser/AppFunctionalityTest.php" line="124" assertions="0" time="0.717396">
+          <error type="Facebook\WebDriver\Exception\UnknownErrorException">Tests\Browser\AppFunctionalityTest::testLoginErrorMessage
+Facebook\WebDriver\Exception\UnknownErrorException: unknown error: net::ERR_CONNECTION_REFUSED
   (Session info: headless chrome=92.0.4515.107)
 
-/projects/challenge/vendor/php-webdriver/webdriver/lib/Exception/WebDriverException.php:120
+/projects/challenge/vendor/php-webdriver/webdriver/lib/Exception/WebDriverException.php:146
 /projects/challenge/vendor/php-webdriver/webdriver/lib/Remote/HttpCommandExecutor.php:359
 /projects/challenge/vendor/php-webdriver/webdriver/lib/Remote/RemoteWebDriver.php:605
-/projects/challenge/vendor/php-webdriver/webdriver/lib/Remote/RemoteWebDriver.php:219
-/projects/challenge/vendor/laravel/dusk/src/ElementResolver.php:373
-/projects/challenge/vendor/laravel/dusk/src/ElementResolver.php:351
-/projects/challenge/vendor/laravel/dusk/src/ElementResolver.php:90
-/projects/challenge/vendor/laravel/dusk/src/Concerns/InteractsWithElements.php:146
-/projects/challenge/tests/Browser/AppFunctionalityTest.php:146
+/projects/challenge/vendor/php-webdriver/webdriver/lib/Remote/RemoteExecuteMethod.php:23
+/projects/challenge/vendor/php-webdriver/webdriver/lib/WebDriverNavigation.php:41
+/projects/challenge/vendor/laravel/dusk/src/Browser.php:185
+/projects/challenge/tests/Browser/AppFunctionalityTest.php:127
+/projects/challenge/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:69
+/projects/challenge/tests/Browser/AppFunctionalityTest.php:133</error>
+        </testcase>
+        <testcase name="testRegisterSuccessMessage" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/projects/challenge/tests/Browser/AppFunctionalityTest.php" line="142" assertions="0" time="0.650717">
+          <error type="Facebook\WebDriver\Exception\UnknownErrorException">Tests\Browser\AppFunctionalityTest::testRegisterSuccessMessage
+Facebook\WebDriver\Exception\UnknownErrorException: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: headless chrome=92.0.4515.107)
+
+/projects/challenge/vendor/php-webdriver/webdriver/lib/Exception/WebDriverException.php:146
+/projects/challenge/vendor/php-webdriver/webdriver/lib/Remote/HttpCommandExecutor.php:359
+/projects/challenge/vendor/php-webdriver/webdriver/lib/Remote/RemoteWebDriver.php:605
+/projects/challenge/vendor/php-webdriver/webdriver/lib/Remote/RemoteExecuteMethod.php:23
+/projects/challenge/vendor/php-webdriver/webdriver/lib/WebDriverNavigation.php:41
+/projects/challenge/vendor/laravel/dusk/src/Browser.php:185
+/projects/challenge/tests/Browser/AppFunctionalityTest.php:145
 /projects/challenge/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:69
 /projects/challenge/tests/Browser/AppFunctionalityTest.php:154</error>
         </testcase>
-        <testcase name="testSuccessRouteGuard" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/projects/challenge/tests/Browser/AppFunctionalityTest.php" line="163" assertions="1" time="0.551437">
-          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Browser\AppFunctionalityTest::testSuccessRouteGuard
-Actual path [/success] does not equal expected path [/].
-Failed asserting that '/success' matches PCRE pattern "/^\/$/u".
+        <testcase name="testSuccessRouteGuard" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/projects/challenge/tests/Browser/AppFunctionalityTest.php" line="163" assertions="0" time="0.809724">
+          <error type="Facebook\WebDriver\Exception\UnknownErrorException">Tests\Browser\AppFunctionalityTest::testSuccessRouteGuard
+Facebook\WebDriver\Exception\UnknownErrorException: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: headless chrome=92.0.4515.107)
 
-/projects/challenge/vendor/laravel/dusk/src/Concerns/MakesUrlAssertions.php:185
-/projects/challenge/vendor/laravel/dusk/src/Concerns/MakesUrlAssertions.php:218
-/projects/challenge/tests/Browser/AppFunctionalityTest.php:167
+/projects/challenge/vendor/php-webdriver/webdriver/lib/Exception/WebDriverException.php:146
+/projects/challenge/vendor/php-webdriver/webdriver/lib/Remote/HttpCommandExecutor.php:359
+/projects/challenge/vendor/php-webdriver/webdriver/lib/Remote/RemoteWebDriver.php:605
+/projects/challenge/vendor/php-webdriver/webdriver/lib/Remote/RemoteExecuteMethod.php:23
+/projects/challenge/vendor/php-webdriver/webdriver/lib/WebDriverNavigation.php:41
+/projects/challenge/vendor/laravel/dusk/src/Browser.php:185
+/projects/challenge/tests/Browser/AppFunctionalityTest.php:166
 /projects/challenge/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:69
-/projects/challenge/tests/Browser/AppFunctionalityTest.php:168</failure>
+/projects/challenge/tests/Browser/AppFunctionalityTest.php:168</error>
         </testcase>
-        <testcase name="testDoesLoginFail" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/projects/challenge/tests/Browser/AppFunctionalityTest.php" line="177" assertions="1" time="0.967009">
+        <testcase name="testDoesLoginFail" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/projects/challenge/tests/Browser/AppFunctionalityTest.php" line="177" assertions="1" time="3.375846">
           <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Browser\AppFunctionalityTest::testDoesLoginFail
 Actual path [/login] does not equal expected path [/].
 Failed asserting that '/login' matches PCRE pattern "/^\/$/u".
@@ -99,7 +119,7 @@ Failed asserting that '/login' matches PCRE pattern "/^\/$/u".
 /projects/challenge/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:69
 /projects/challenge/tests/Browser/AppFunctionalityTest.php:186</failure>
         </testcase>
-        <testcase name="testDoesRegisterFail" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/projects/challenge/tests/Browser/AppFunctionalityTest.php" line="195" assertions="0" time="0.710605">
+        <testcase name="testDoesRegisterFail" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/projects/challenge/tests/Browser/AppFunctionalityTest.php" line="195" assertions="0" time="1.032179">
           <error type="Facebook\WebDriver\Exception\NoSuchElementException">Tests\Browser\AppFunctionalityTest::testDoesRegisterFail
 Facebook\WebDriver\Exception\NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"body [data-test="register-firstName"]"}
   (Session info: headless chrome=92.0.4515.107)
@@ -116,7 +136,7 @@ Facebook\WebDriver\Exception\NoSuchElementException: no such element: Unable to 
 /projects/challenge/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:69
 /projects/challenge/tests/Browser/AppFunctionalityTest.php:207</error>
         </testcase>
-        <testcase name="testDoesRegisterSucceed" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/projects/challenge/tests/Browser/AppFunctionalityTest.php" line="216" assertions="0" time="0.754830">
+        <testcase name="testDoesRegisterSucceed" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/projects/challenge/tests/Browser/AppFunctionalityTest.php" line="216" assertions="0" time="0.689481">
           <error type="Facebook\WebDriver\Exception\NoSuchElementException">Tests\Browser\AppFunctionalityTest::testDoesRegisterSucceed
 Facebook\WebDriver\Exception\NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"body [data-test="register-firstName"]"}
   (Session info: headless chrome=92.0.4515.107)
@@ -133,7 +153,7 @@ Facebook\WebDriver\Exception\NoSuchElementException: no such element: Unable to 
 /projects/challenge/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:69
 /projects/challenge/tests/Browser/AppFunctionalityTest.php:229</error>
         </testcase>
-        <testcase name="testDoesLoginSucceed" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/projects/challenge/tests/Browser/AppFunctionalityTest.php" line="238" assertions="1" time="1.250276">
+        <testcase name="testDoesLoginSucceed" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/projects/challenge/tests/Browser/AppFunctionalityTest.php" line="238" assertions="1" time="1.088402">
           <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Browser\AppFunctionalityTest::testDoesLoginSucceed
 Actual path [/login] does not equal expected path [/success].
 Failed asserting that '/login' matches PCRE pattern "/^\/success$/u".
@@ -144,7 +164,7 @@ Failed asserting that '/login' matches PCRE pattern "/^\/success$/u".
 /projects/challenge/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:69
 /projects/challenge/tests/Browser/AppFunctionalityTest.php:248</failure>
         </testcase>
-        <testcase name="testSuccessPageContent" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/projects/challenge/tests/Browser/AppFunctionalityTest.php" line="257" assertions="1" time="5.980557">
+        <testcase name="testSuccessPageContent" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/projects/challenge/tests/Browser/AppFunctionalityTest.php" line="257" assertions="1" time="5.930893">
           <error type="Facebook\WebDriver\Exception\TimeoutException">Tests\Browser\AppFunctionalityTest::testSuccessPageContent
 Facebook\WebDriver\Exception\TimeoutException: Waited 5 seconds for text [Hello, Magebit Test] ignoring case.
 
@@ -156,7 +176,7 @@ Facebook\WebDriver\Exception\TimeoutException: Waited 5 seconds for text [Hello,
 /projects/challenge/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:69
 /projects/challenge/tests/Browser/AppFunctionalityTest.php:270</error>
         </testcase>
-        <testcase name="testLogout" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/projects/challenge/tests/Browser/AppFunctionalityTest.php" line="279" assertions="2" time="0.846073">
+        <testcase name="testLogout" class="Tests\Browser\AppFunctionalityTest" classname="Tests.Browser.AppFunctionalityTest" file="/projects/challenge/tests/Browser/AppFunctionalityTest.php" line="279" assertions="2" time="0.817070">
           <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Browser\AppFunctionalityTest::testLogout
 The user is unexpectedly authenticated.
 Failed asserting that an array is empty.
@@ -167,8 +187,8 @@ Failed asserting that an array is empty.
 /projects/challenge/tests/Browser/AppFunctionalityTest.php:288</failure>
         </testcase>
       </testsuite>
-      <testsuite name="Tests\Browser\AppStylingTest" file="/projects/challenge/tests/Browser/AppStylingTest.php" tests="16" assertions="36" errors="1" warnings="0" failures="13" skipped="0" time="10.823796">
-        <testcase name="testIsCorrectFontFamily" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/projects/challenge/tests/Browser/AppStylingTest.php" line="109" assertions="1" time="0.948728">
+      <testsuite name="Tests\Browser\AppStylingTest" file="/projects/challenge/tests/Browser/AppStylingTest.php" tests="16" assertions="36" errors="1" warnings="0" failures="13" skipped="0" time="10.409896">
+        <testcase name="testIsCorrectFontFamily" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/projects/challenge/tests/Browser/AppStylingTest.php" line="109" assertions="1" time="0.849454">
           <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Browser\AppStylingTest::testIsCorrectFontFamily
 Body has incorrect font family
 Failed asserting that false is true.
@@ -177,7 +197,7 @@ Failed asserting that false is true.
 /projects/challenge/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:69
 /projects/challenge/tests/Browser/AppStylingTest.php:119</failure>
         </testcase>
-        <testcase name="testIsButtonCorrectColor" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/projects/challenge/tests/Browser/AppStylingTest.php" line="126" assertions="1" time="0.607740">
+        <testcase name="testIsButtonCorrectColor" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/projects/challenge/tests/Browser/AppStylingTest.php" line="126" assertions="1" time="0.565494">
           <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Browser\AppStylingTest::testIsButtonCorrectColor
 Button with text Sign In has incorrect background-color.
 Failed asserting that two strings are equal.
@@ -193,7 +213,7 @@ Failed asserting that two strings are equal.
 /projects/challenge/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:69
 /projects/challenge/tests/Browser/AppStylingTest.php:139</failure>
         </testcase>
-        <testcase name="testIsHeaderIconsCorrectColor" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/projects/challenge/tests/Browser/AppStylingTest.php" line="146" assertions="1" time="0.566915">
+        <testcase name="testIsHeaderIconsCorrectColor" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/projects/challenge/tests/Browser/AppStylingTest.php" line="146" assertions="1" time="0.521360">
           <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Browser\AppStylingTest::testIsHeaderIconsCorrectColor
 Header icon has incorrect color.
 Failed asserting that two strings are equal.
@@ -209,7 +229,7 @@ Failed asserting that two strings are equal.
 /projects/challenge/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:69
 /projects/challenge/tests/Browser/AppStylingTest.php:159</failure>
         </testcase>
-        <testcase name="testIsHeaderLinksCorrectColor" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/projects/challenge/tests/Browser/AppStylingTest.php" line="166" assertions="1" time="0.579347">
+        <testcase name="testIsHeaderLinksCorrectColor" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/projects/challenge/tests/Browser/AppStylingTest.php" line="166" assertions="1" time="0.554664">
           <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Browser\AppStylingTest::testIsHeaderLinksCorrectColor
 Header link with text "What's New" has incorrect color.
 Failed asserting that two strings are equal.
@@ -225,7 +245,7 @@ Failed asserting that two strings are equal.
 /projects/challenge/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:69
 /projects/challenge/tests/Browser/AppStylingTest.php:179</failure>
         </testcase>
-        <testcase name="testIsHeaderLinksWithoutUnderline" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/projects/challenge/tests/Browser/AppStylingTest.php" line="186" assertions="2" time="0.703160">
+        <testcase name="testIsHeaderLinksWithoutUnderline" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/projects/challenge/tests/Browser/AppStylingTest.php" line="186" assertions="2" time="0.668955">
           <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Browser\AppStylingTest::testIsHeaderLinksWithoutUnderline
 Header link with text "What's New" has incorrect hover text-decoration-line.
 Failed asserting that two strings are equal.
@@ -241,7 +261,7 @@ Failed asserting that two strings are equal.
 /projects/challenge/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:69
 /projects/challenge/tests/Browser/AppStylingTest.php:199</failure>
         </testcase>
-        <testcase name="testIsHeaderLinksCorrectWeight" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/projects/challenge/tests/Browser/AppStylingTest.php" line="206" assertions="1" time="0.561691">
+        <testcase name="testIsHeaderLinksCorrectWeight" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/projects/challenge/tests/Browser/AppStylingTest.php" line="206" assertions="1" time="0.556132">
           <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Browser\AppStylingTest::testIsHeaderLinksCorrectWeight
 Header link with text "What's New"
 Failed asserting that two strings are equal.
@@ -256,7 +276,7 @@ Failed asserting that two strings are equal.
 /projects/challenge/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:69
 /projects/challenge/tests/Browser/AppStylingTest.php:218</failure>
         </testcase>
-        <testcase name="testIsHeaderLinksUppercase" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/projects/challenge/tests/Browser/AppStylingTest.php" line="225" assertions="1" time="0.569753">
+        <testcase name="testIsHeaderLinksUppercase" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/projects/challenge/tests/Browser/AppStylingTest.php" line="225" assertions="1" time="0.540441">
           <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Browser\AppStylingTest::testIsHeaderLinksUppercase
 Header link with text "What's New" is not uppercase.
 Failed asserting that false is true.
@@ -265,7 +285,7 @@ Failed asserting that false is true.
 /projects/challenge/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:69
 /projects/challenge/tests/Browser/AppStylingTest.php:235</failure>
         </testcase>
-        <testcase name="testDoesHeaderBarHaveShadow" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/projects/challenge/tests/Browser/AppStylingTest.php" line="242" assertions="1" time="0.561435">
+        <testcase name="testDoesHeaderBarHaveShadow" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/projects/challenge/tests/Browser/AppStylingTest.php" line="242" assertions="1" time="0.527433">
           <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Browser\AppStylingTest::testDoesHeaderBarHaveShadow
 Header bar has missing/incorrect shadow.
 Failed asserting that two strings are equal.
@@ -280,7 +300,7 @@ Failed asserting that two strings are equal.
 /projects/challenge/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:69
 /projects/challenge/tests/Browser/AppStylingTest.php:253</failure>
         </testcase>
-        <testcase name="testForgotPasswordColor" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/projects/challenge/tests/Browser/AppStylingTest.php" line="260" assertions="1" time="0.553024">
+        <testcase name="testForgotPasswordColor" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/projects/challenge/tests/Browser/AppStylingTest.php" line="260" assertions="1" time="0.560618">
           <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Browser\AppStylingTest::testForgotPasswordColor
 Forgot password link has incorrect color.
 Failed asserting that two strings are equal.
@@ -296,8 +316,8 @@ Failed asserting that two strings are equal.
 /projects/challenge/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:69
 /projects/challenge/tests/Browser/AppStylingTest.php:272</failure>
         </testcase>
-        <testcase name="testForgotPasswordUnderline" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/projects/challenge/tests/Browser/AppStylingTest.php" line="279" assertions="1" time="0.139424"/>
-        <testcase name="testFooterLinksColor" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/projects/challenge/tests/Browser/AppStylingTest.php" line="297" assertions="1" time="0.568925">
+        <testcase name="testForgotPasswordUnderline" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/projects/challenge/tests/Browser/AppStylingTest.php" line="279" assertions="1" time="0.128493"/>
+        <testcase name="testFooterLinksColor" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/projects/challenge/tests/Browser/AppStylingTest.php" line="297" assertions="1" time="0.551228">
           <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Browser\AppStylingTest::testFooterLinksColor
 Footer link with text "About" has incorrect color.
 Failed asserting that two strings are equal.
@@ -313,8 +333,8 @@ Failed asserting that two strings are equal.
 /projects/challenge/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:69
 /projects/challenge/tests/Browser/AppStylingTest.php:310</failure>
         </testcase>
-        <testcase name="testFooterLinksUnderline" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/projects/challenge/tests/Browser/AppStylingTest.php" line="317" assertions="21" time="2.012919"/>
-        <testcase name="testCheckboxStyling" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/projects/challenge/tests/Browser/AppStylingTest.php" line="337" assertions="0" time="0.553078">
+        <testcase name="testFooterLinksUnderline" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/projects/challenge/tests/Browser/AppStylingTest.php" line="317" assertions="21" time="2.016191"/>
+        <testcase name="testCheckboxStyling" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/projects/challenge/tests/Browser/AppStylingTest.php" line="337" assertions="0" time="0.537701">
           <error type="Facebook\WebDriver\Exception\NoSuchElementException">Tests\Browser\AppStylingTest::testCheckboxStyling
 Facebook\WebDriver\Exception\NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[data-test="register-newsletter"]"}
   (Session info: headless chrome=92.0.4515.107)
@@ -327,7 +347,7 @@ Facebook\WebDriver\Exception\NoSuchElementException: no such element: Unable to 
 /projects/challenge/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:69
 /projects/challenge/tests/Browser/AppStylingTest.php:364</error>
         </testcase>
-        <testcase name="testRegisterSectionTitle" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/projects/challenge/tests/Browser/AppStylingTest.php" line="371" assertions="1" time="0.631809">
+        <testcase name="testRegisterSectionTitle" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/projects/challenge/tests/Browser/AppStylingTest.php" line="371" assertions="1" time="0.681336">
           <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Browser\AppStylingTest::testRegisterSectionTitle
 Couldn't find text "Create New Customer Account"
 Failed asserting that false is true.
@@ -336,7 +356,7 @@ Failed asserting that false is true.
 /projects/challenge/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:69
 /projects/challenge/tests/Browser/AppStylingTest.php:382</failure>
         </testcase>
-        <testcase name="testRegisterFormTitles" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/projects/challenge/tests/Browser/AppStylingTest.php" line="389" assertions="1" time="0.618446">
+        <testcase name="testRegisterFormTitles" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/projects/challenge/tests/Browser/AppStylingTest.php" line="389" assertions="1" time="0.581431">
           <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Browser\AppStylingTest::testRegisterFormTitles
 Couldn't find text "Personal Information"
 Failed asserting that false is true.
@@ -345,7 +365,7 @@ Failed asserting that false is true.
 /projects/challenge/vendor/laravel/dusk/src/Concerns/ProvidesBrowser.php:69
 /projects/challenge/tests/Browser/AppStylingTest.php:407</failure>
         </testcase>
-        <testcase name="testFooterCopyright" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/projects/challenge/tests/Browser/AppStylingTest.php" line="414" assertions="1" time="0.647404">
+        <testcase name="testFooterCopyright" class="Tests\Browser\AppStylingTest" classname="Tests.Browser.AppStylingTest" file="/projects/challenge/tests/Browser/AppStylingTest.php" line="414" assertions="1" time="0.568964">
           <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Browser\AppStylingTest::testFooterCopyright
 Couldn't find text "© 2023 Pineapple Ltd."
 Failed asserting that false is true.
